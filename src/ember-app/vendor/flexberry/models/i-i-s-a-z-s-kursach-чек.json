@@ -80,6 +80,20 @@
           "name": "клиент",
           "relatedTo": "i-i-s-a-z-s-kursach-клиент",
           "inverse": null
+        },
+        {
+          "lookupValue": "КолТоп",
+          "lookupValueField": "колТоп",
+          "relationName": "ЗаправкаАвто",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 3,
+          "type": "standard",
+          "caption": "Заправка автомобиля",
+          "name": "заправкаАвто",
+          "relatedTo": "i-i-s-a-z-s-kursach-заправка-авто",
+          "inverse": null
         }
       ],
       "hasMany": [
@@ -129,6 +143,27 @@
           "caption": "ФИО клиента",
           "name": "клиент",
           "relatedTo": "i-i-s-a-z-s-kursach-клиент",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЗаправкаАвто",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "колТоп",
+              "caption": "Количество топлива",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Количество топлива",
+          "name": "заправкаАвто",
+          "relatedTo": "i-i-s-a-z-s-kursach-заправка-авто",
           "inverse": null
         }
       ],

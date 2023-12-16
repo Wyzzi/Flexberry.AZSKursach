@@ -31,14 +31,17 @@ namespace IIS.AZSKursach
     [View("ЧекE", new string[] {
             "Номер as \'Номер\'",
             "Клиент as \'ФИО клиента\'",
-            "Сумма as \'Сумма\'"})]
+            "Сумма as \'Сумма\'",
+            "ЗаправкаАвто as \'Заправка автомобиля\'"})]
     [AssociatedDetailViewAttribute("ЧекE", "ТЧТовары", "ТЧТоварыE", true, "", "Товары", true, new string[] {
             ""})]
     [MasterViewDefineAttribute("ЧекE", "Клиент", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Наимен")]
+    [MasterViewDefineAttribute("ЧекE", "ЗаправкаАвто", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "КолТоп")]
     [View("ЧекL", new string[] {
             "Номер as \'Номер\'",
             "Клиент.Наимен as \'ФИО клиента\'",
-            "Сумма as \'Сумма\'"})]
+            "Сумма as \'Сумма\'",
+            "ЗаправкаАвто.КолТоп as \'Количество топлива\'"})]
     public class Чек : ICSSoft.STORMNET.DataObject
     {
         

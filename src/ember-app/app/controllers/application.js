@@ -28,7 +28,7 @@ export default Controller.extend({
             link: 'i-i-s-a-z-s-kursach-чек-l',
             caption: i18n.t('forms.application.sitemap.чековые-данные.i-i-s-a-z-s-kursach-чек-l.caption'),
             title: i18n.t('forms.application.sitemap.чековые-данные.i-i-s-a-z-s-kursach-чек-l.title'),
-            icon: 'chart line',
+            icon: 'tasks',
             children: null
           }]
         }, {
@@ -46,13 +46,13 @@ export default Controller.extend({
             link: 'i-i-s-a-z-s-kursach-карта-лояль-l',
             caption: i18n.t('forms.application.sitemap.клиентские-данные.i-i-s-a-z-s-kursach-карта-лояль-l.caption'),
             title: i18n.t('forms.application.sitemap.клиентские-данные.i-i-s-a-z-s-kursach-карта-лояль-l.title'),
-            icon: 'suitcase',
+            icon: 'tags',
             children: null
           }, {
             link: 'i-i-s-a-z-s-kursach-банк-дан-l',
             caption: i18n.t('forms.application.sitemap.клиентские-данные.i-i-s-a-z-s-kursach-банк-дан-l.caption'),
             title: i18n.t('forms.application.sitemap.клиентские-данные.i-i-s-a-z-s-kursach-банк-дан-l.title'),
-            icon: 'briefcase',
+            icon: 'address card',
             children: null
           }]
         }, {
@@ -64,7 +64,7 @@ export default Controller.extend({
             link: 'i-i-s-a-z-s-kursach-товары-спр-l',
             caption: i18n.t('forms.application.sitemap.товары.i-i-s-a-z-s-kursach-товары-спр-l.caption'),
             title: i18n.t('forms.application.sitemap.товары.i-i-s-a-z-s-kursach-товары-спр-l.title'),
-            icon: 'folder open',
+            icon: 'book',
             children: null
           }]
         }, {
@@ -76,13 +76,12 @@ export default Controller.extend({
             link: 'i-i-s-a-z-s-kursach-заправ-бак-l',
             caption: i18n.t('forms.application.sitemap.а-з-с.i-i-s-a-z-s-kursach-заправ-бак-l.caption'),
             title: i18n.t('forms.application.sitemap.а-з-с.i-i-s-a-z-s-kursach-заправ-бак-l.title'),
-            icon: 'tags',
+            icon: 'folder',
             children: null
           }, {
             link: 'i-i-s-a-z-s-kursach-заправка-авто-l',
             caption: i18n.t('forms.application.sitemap.а-з-с.i-i-s-a-z-s-kursach-заправка-авто-l.caption'),
             title: i18n.t('forms.application.sitemap.а-з-с.i-i-s-a-z-s-kursach-заправка-авто-l.title'),
-            icon: 'book',
             children: null
           }]
         }

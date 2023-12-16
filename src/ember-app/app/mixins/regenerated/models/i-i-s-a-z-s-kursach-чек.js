@@ -57,6 +57,9 @@ export let defineProjections = function (modelClass) {
     клиент: belongsTo('i-i-s-a-z-s-kursach-клиент', 'ФИО клиента', {
 
     }, { index: 1, displayMemberPath: 'наимен' }),
+    заправкаАвто: belongsTo('i-i-s-a-z-s-kursach-заправка-авто', 'Заправка автомобиля', {
+
+    }, { index: 3, displayMemberPath: 'колТоп' }),
     тЧТовары: hasMany('i-i-s-a-z-s-kursach-т-ч-товары', 'Товары', {
       количество: attr('Количество', { index: 1 }),
       товарыСпр: belongsTo('i-i-s-a-z-s-kursach-товары-спр', 'Товар', {
@@ -70,6 +73,9 @@ export let defineProjections = function (modelClass) {
     клиент: belongsTo('i-i-s-a-z-s-kursach-клиент', 'ФИО клиента', {
       наимен: attr('ФИО клиента', { index: 1 })
     }, { index: -1, hidden: true }),
-    сумма: attr('Сумма', { index: 2 })
+    сумма: attr('Сумма', { index: 2 }),
+    заправкаАвто: belongsTo('i-i-s-a-z-s-kursach-заправка-авто', 'Количество топлива', {
+      колТоп: attr('Количество топлива', { index: 3 })
+    }, { index: -1, hidden: true })
   });
 };
